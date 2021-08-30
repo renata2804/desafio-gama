@@ -1,0 +1,118 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "Desafio Gama",
+      "description": "Projeto final do curso da Gama Academy",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "Ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: nome, cargo, dataNasc, estadoCivil, sexo, cep, logradouro, numero, complemento, bairro, cidade, uf, tel, cel, email, cpf, rg, veiculo e cnh",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "cargo": {
+                      "type": "string"
+                    },
+                    "dataNasc": {
+                      "type": "date"
+                    },
+                    "estadoCivil": {
+                      "type": "string"
+                    },
+                    "sexo": {
+                      "type": "string"
+                    },
+                    "cep": {
+                      "type": "string"
+                    },
+                    "logradouro": {
+                      "type": "string"
+                    },
+                    "numero": {
+                      "type": "string"
+                    },
+                    "complemento": {
+                      "type": "string"
+                    },
+                    "bairro": {
+                      "type": "string"
+                    },
+                    "cidade": {
+                      "type": "string"
+                    },
+                    "uf": {
+                      "type": "string"
+                    },
+                    "tel": {
+                      "type": "string"
+                    },
+                    "cel": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "cpf": {
+                      "type": "string"
+                    },
+                    "rg": {
+                      "type": "string"
+                    },
+                    "veiculo": {
+                      "type": "string"
+                    },
+                    "cnh": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "examples": {
+                  "eu mermo": {
+                    "value": {
+                      "name": "Renata",
+                      "cargo": "Padeiro",
+                      "dataNasc": "28041978",
+                      "estadoCivil": "Casado(a)",
+                      "sexo": "Feminino",                       
+                      "cep": "00000000",                      
+                      "logradouro": "Rua A",                      
+                      "numero": "5",                    
+                      "complemento": "105",                      
+                      "bairro": "Cascadura",                      
+                      "cidade": "Rio de Janeiro",                      
+                      "uf": "Rio de Janeiro",                      
+                      "tel": "2132735814",                      
+                      "cel": "21970442529",                      
+                      "email": "renata@gmail.com",                      
+                      "cpf": "12345678945",                      
+                      "rg": "123456789",
+                      "veiculo": "Sim",
+                      "cnh": "AE"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

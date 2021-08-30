@@ -1,0 +1,29 @@
+{
+  "name": "desafio-gama",
+  "version": "1.0.0",
+  "description": "Desafio Final Gama Academy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon desafioGama/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+github.com/renata2804/desafio-gama.git"
+  },
+  "author": "Renata Teixeira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renata2804/desafio-gama/issues"
+  },
+  "homepage": "https://github.com/renata2804/desafio-gama#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2",
+    "pck": "0.0.1",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
